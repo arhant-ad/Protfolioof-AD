@@ -1,0 +1,613 @@
+<!-- DEFINES: Document type and language -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arhant Dhanvijay - Portfolio</title>
+    <!-- CONNECTS: Favicon -->
+    <!-- Fonts and icons: Poppins/Lato for typography; Font Awesome included for icons used elsewhere -->
+    <!-- CONNECTS: External fonts and icon libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main stylesheet -->
+    <!-- CONNECTS: Local CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- DEFINES: Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    <!-- DEFINES: Cursor glow effect element required by script.js -->
+    <div class="cursor-glow"></div>
+    <!-- DEFINES: Particle background container -->
+    <div id="particles-js"></div>
+    <!-- DEFINES: Main Header and Navigation -->
+    <header class="site-header">
+        <nav id="navbar" class="main-nav">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Preloader removed for faster, simpler load -->
+
+    <main>
+        <!-- Section: Hero / Intro -->
+        <!-- DEFINES: Hero section with intro text -->
+        <section id="welcome-section" class="hero">
+            <div class="hero-text">
+                <h1 id="hero-name" data-text="Arhant Dhanvijay">Arhant Dhanvijay</h1>
+                <h2 class="hidden">Cyber Security | Web Developer | Android Developer</h2>
+                <p class="hidden">“Motivated engineering student with strong interest in secure and modern web applications”</p>
+                <div class="skills-animation hidden">
+                    <span class="type-prefix">I am </span><span id="typed-text"></span>
+                </div>
+                <div class="hero-buttons hidden">
+                    <a href="assets/Arhant-Dhanvijay-Resume.pdf" class="btn" download>Download Resume</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="mailto:arhant.dhanvijay@gmail.com" class="btn"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: About - profile card + description/highlights -->
+        <!-- DEFINES: About section linked via ID 'about' -->
+        <section id="about" class="about">
+            <h2 id="about-title" class="hidden"> About Me</h2>
+            <p class="subtitle hidden">A little bit about my journey and passions.</p>
+            <div id="about-grid" class="about-grid">
+                <div class="profile-card hidden">
+                    <div class="avatar">AD</div>
+                    <h3 class="profile-name">Arhant Dhanvijay</h3>
+                    <p class="profile-role">Cyber Security Student & Web Developer</p>
+                    <div class="contact-buttons">
+                        <a class="btn" href="assets/Arhant-Dhanvijay-Resume.pdf" download>Download Resume</a>
+                        <a class="btn outline" href="#contact">Contact</a>
+                    </div>
+                    <div class="social-row">
+                        <a href="https://github.com/freeCodeCamp" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="about-content hidden">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button close"></span>
+                                <span class="terminal-button minimize"></span>
+                                <span class="terminal-button maximize"></span>
+                            </div>
+                            <div class="terminal-title">user@arhant:~/portfolio</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line"><span class="prompt">➜</span> <span class="path">~</span> <span class="cmd">cat</span> <span class="arg">about_me.txt</span></div>
+                            <div class="code-output">
+                                <p>I am a passionate and driven cybersecurity student with a strong foundation in web development. I am constantly seeking to expand my knowledge and skills in the ever-evolving world of technology.</p>
+                                <p>I am a firm believer in the power of teamwork and collaboration, and I am always eager to learn from others and contribute to a team's success.</p>
+                            </div>
+                            <div class="code-line"><span class="prompt">➜</span> <span class="path">~</span> <span class="cursor">_</span></div>
+                        </div>
+                    </div>
+                    <!-- ADDED: GitHub Contribution Calendar -->
+                    <div class="github-calendar hidden">
+                        <img src="https://ghchart.rshah.org/007bff/YOUR_USERNAME" alt="GitHub Contribution Calendar" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Education - vertical timeline with accessible list semantics -->
+        <!-- DEFINES: Education section linked via ID 'education' -->
+        <section id="education" class="education">
+            <h2 class="hidden">Education</h2>
+            <blockquote class="education-quote hidden">
+                "Cultivation of mind should be the ultimate aim of human existence."
+                <cite>— Dr. B.R. Ambedkar</cite>
+            </blockquote>
+            <div class="diploma-grid">
+                <!-- Diploma Card 1 -->
+                <div class="diploma-card hidden">
+                    <div class="diploma-frame"></div>
+                    <div class="diploma-seal"><i class="fas fa-university"></i></div>
+                    <div class="diploma-header">Maharashtra State Board</div>
+                    <div class="diploma-body">
+                        <h3>Secondary School Certificate (10th)</h3>
+                        <p class="diploma-date">Completed 2021</p>
+                        <p class="diploma-text">Completed 10th grade with a strong foundation in mathematics and science.</p>
+                    </div>
+                </div>
+                <!-- Diploma Card 2 -->
+                <div class="diploma-card hidden">
+                    <div class="diploma-frame"></div>
+                    <div class="diploma-seal"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="diploma-header">Maharashtra State Board</div>
+                    <div class="diploma-body">
+                        <h3>Higher Secondary Certificate (12th)</h3>
+                        <p class="diploma-date">Completed 2023</p>
+                        <p class="diploma-text">Completed 12th grade in the science stream.</p>
+                    </div>
+                </div>
+                <!-- Diploma Card 3 -->
+                <div class="diploma-card hidden">
+                    <div class="diploma-frame"></div>
+                    <div class="diploma-seal"><i class="fas fa-user-graduate"></i></div>
+                    <div class="diploma-header">St. Vincent Pallotti College</div>
+                    <div class="diploma-body">
+                        <h3>B.Tech CSE (Cyber Security)</h3>
+                        <p class="diploma-date">2024 — Present</p>
+                        <p class="diploma-text">Undergraduate student specializing in Cyber Security, secure systems, and applied cryptography.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEFINES: Certifications section linked via ID 'certifications' -->
+        <section id="certifications" class="certifications">
+            <h2 class="hidden">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="featured-cert-card card hidden">
+                    <div class="cert-status pending"><i class="fas fa-circle-notch fa-spin"></i> In Progress</div>
+                    <div class="cert-icon-large"><i class="fas fa-user-secret"></i></div>
+                    <h3>Certified Ethical Hacker (CEH)</h3>
+                    <p class="cert-issuer">EC-Council - Awaiting</p>
+                    <p class="cert-description">Demonstrates expertise in ethical hacking methodologies and tools.</p>
+                    <button class="btn cert-btn" disabled>Awaiting</button>
+                </div>
+                <div class="featured-cert-card card hidden">
+                    <div class="cert-status pending"><i class="fas fa-circle-notch fa-spin"></i> In Progress</div>
+                    <div class="cert-icon-large"><i class="fas fa-shield-alt"></i></div>
+                    <h3>CompTIA Security+</h3>
+                    <p class="cert-issuer">CompTIA - Awaiting</p>
+                    <p class="cert-description">Demonstrates foundational cybersecurity skills and network security knowledge.</p>
+                    <button class="btn cert-btn" disabled>Awaiting</button>
+                </div>
+                <div class="featured-cert-card card hidden">
+                    <div class="cert-status verified"><i class="fas fa-check-circle"></i> Valid</div>
+                    <div class="cert-icon-large"><i class="fas fa-code"></i></div>
+                    <h3>JavaScript Algorithms & Data Structures</h3>
+                    <div class="credential-id">ID: FCC-JS-2024-89X</div>
+                    <p class="cert-issuer">freeCodeCamp - 2024</p>
+                    <p class="cert-description">Certifies proficiency in JavaScript algorithms, data structures, and problem solving.</p>
+                    <a href="#" class="btn cert-btn" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+                </div>
+                <div class="featured-cert-card card hidden">
+                    <div class="cert-status verified"><i class="fas fa-check-circle"></i> Valid</div>
+                    <div class="cert-icon-large"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Responsive Web Design</h3>
+                    <div class="credential-id">ID: FCC-RWD-2023-42Z</div>
+                    <p class="cert-issuer">freeCodeCamp - 2023</p>
+                    <p class="cert-description">Certifies ability to build responsive, accessible, and mobile-first web designs.</p>
+                    <a href="#" class="btn cert-btn" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+                </div>
+            </div>
+        </section>
+        <!-- DEFINES: Skills section linked via ID 'skills' -->
+        <section id="skills" class="skills">
+            <h2 class="hidden">Skills</h2>
+            <!-- ADDED: Container for the new Chart.js Radar Chart -->
+            <div class="skills-chart-wrapper hidden">
+                <canvas id="skillsChart"></canvas>
+            </div>
+            <div class="skill-showcase">                          
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/react-native.png" alt="React" />
+                            </div>
+                            <span>React</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="75"></div>
+                                </div>
+                                <p class="skill-description">Building user interfaces.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/html-5--v1.png" alt="HTML5" />
+                            </div>
+                            <span>HTML5</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="90"></div>
+                                </div>
+                                <p class="skill-description">Structuring web content.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/css3.png" alt="CSS3" />
+                            </div>
+                            <span>CSS3</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="85"></div>
+                                </div>
+                                <p class="skill-description">Styling web applications.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/javascript--v1.png" alt="JavaScript" />
+                            </div>
+                            <span>JavaScript</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="80"></div>
+                                </div>
+                                <p class="skill-description">Interactive web functionality.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/bootstrap.png" alt="Bootstrap" />
+                            </div>
+                            <span>Bootstrap</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="80"></div>
+                                </div>
+                                <p class="skill-description">Responsive design framework.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/nodejs.png" alt="Node.js" />
+                            </div>
+                            <span>Node.js</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="70"></div>
+                                </div>
+                                <p class="skill-description">Server-side JavaScript.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/mongodb.png" alt="MongoDB" />
+                            </div>
+                            <span>MongoDB</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="65"></div>
+                                </div>
+                                <p class="skill-description">NoSQL database management.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/sql.png" alt="SQL" />
+                            </div>
+                            <span>SQL</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="70"></div>
+                                </div>
+                                <p class="skill-description">Database query language.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="Java" />
+                            </div>
+                            <span>Java</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="60"></div>
+                                </div>
+                                <p class="skill-description">Object-oriented programming.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/python--v1.png" alt="Python" />
+                            </div>
+                            <span>Python</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="85"></div>
+                                </div>
+                                <p class="skill-description">Backend & Scripting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/git.png" alt="Git" />
+                            </div>
+                            <span>Git</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="85"></div>
+                                </div>
+                                <p class="skill-description">Version control system.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/linux--v1.png" alt="Linux" />
+                            </div>
+                            <span>Linux</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="75"></div>
+                                </div>
+                                <p class="skill-description">Operating system.</p>
+                            </div>
+                        </div>
+                        <div class="skill-card card hidden">
+                            <div class="skill-icon-wrapper">
+                                <img src="https://img.icons8.com/color/144/visual-studio-code-2019.png" alt="VS Code" />
+                            </div>
+                            <span>VS Code</span>
+                            <div class="skill-details">
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="90"></div>
+                                </div>
+                                <p class="skill-description">Code editor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Projects - responsive cards with modal details -->
+        <!-- DEFINES: Projects section linked via ID 'projects' -->
+        <section id="projects" class="projects">
+            <h2 class="hidden">Projects</h2>
+            <div class="project-filters hidden">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+            <div class="project-cards">
+                <article class="project-card card hidden" tabindex="0" data-category="web security"
+                    data-title="SecureNotes — Encrypted Notes App"
+                    data-image="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    data-tech="React,Node.js,Express,SQLite,CryptoJS"
+                    data-description="A lightweight encrypted note-taking app with client-side encryption and secure sync. Built with React on the frontend and Node.js for optional sync service. Features AES encryption, offline-first storage, and password-based key derivation.">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-badge featured"><i class="fas fa-star"></i> Featured</div>
+                            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="SecureNotes screenshot" loading="lazy" width="800" height="476">
+                            <div class="front-overlay">
+                                <h3>SecureNotes</h3>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <div class="card-body">
+                                <h3>SecureNotes</h3>
+                                <p class="muted">Encrypted notes with offline-first sync</p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">Crypto</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/freeCodeCamp" class="btn outline" aria-label="Open SecureNotes GitHub">GitHub</a>
+                                    <button class="btn" data-action="view" aria-label="View SecureNotes details">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card card hidden" tabindex="0" data-category="security"
+                    data-title="NetGuard — Simple Network Scanner"
+                    data-image="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    data-tech="Python,Scapy,Flask"
+                    data-description="Network scanning tool focused on discovery and basic security checks. Implemented core scanning with Scapy and a small Flask dashboard for visualization. Useful for lab environments and learning network protocols.">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-badge featured"><i class="fas fa-star"></i> Featured</div>
+                            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NetGuard screenshot" loading="lazy" width="800" height="476">
+                            <div class="front-overlay">
+                                <h3>NetGuard</h3>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <div class="card-body">
+                                <h3>NetGuard</h3>
+                                <p class="muted">Network discovery + lightweight security checks</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Network</span>
+                                    <span class="tag">Security</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/freeCodeCamp" class="btn outline" aria-label="Open NetGuard GitHub">GitHub</a>
+                                    <button class="btn" data-action="view" aria-label="View NetGuard details">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card card hidden" tabindex="0" data-category="web"
+                    data-title="Portfolio Website — This site"
+                    data-image="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    data-tech="HTML,CSS,JavaScript"
+                    data-description="Personal portfolio site built with semantic HTML, responsive CSS, and interactive JavaScript. Focused on accessibility, performance, and showcasing projects and skills.">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-badge new"><i class="fas fa-bolt"></i> New</div>
+                            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Portfolio screenshot" loading="lazy" width="800" height="476">
+                            <div class="front-overlay">
+                                <h3>Portfolio Website</h3>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <div class="card-body">
+                                <h3>Portfolio Website</h3>
+                                <p class="muted">Responsive personal website</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/freeCodeCamp" class="btn outline" aria-label="Open Portfolio GitHub">GitHub</a>
+                                    <button class="btn" data-action="view" aria-label="View Portfolio details">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Project detail modal (hidden by default) -->
+        <!-- DEFINES: Modal structure for project details -->
+        <div id="project-modal" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+            <div class="modal-overlay" data-action="close"></div>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close project details" data-action="close">×</button>
+                <img class="modal-image" src="" alt="">
+                <h3 id="modal-title"></h3>
+                <p class="modal-desc"></p>
+                <div class="modal-tech"></div>
+                <div class="modal-actions">
+                    <a href="#" class="btn outline modal-github">GitHub</a>
+                    <a href="#" class="btn modal-demo">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEFINES: Achievements section linked via ID 'achievements' -->
+        <section id="achievements" class="achievements">
+            <h2 class="hidden">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card hidden">
+                    <div class="achievement-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Event Organizer</h3>
+                    <p>Organized and managed college technical fests and coding bootcamps, coordinating with teams to ensure successful execution.</p>
+                </div>
+                <div class="achievement-card hidden">
+                    <div class="achievement-icon"><i class="fas fa-microphone"></i></div>
+                    <h3>Guest Speaker</h3>
+                    <p>Delivered seminars on Cyber Security awareness and Web Development trends to students and faculty.</p>
+                </div>
+                <div class="achievement-card hidden">
+                    <div class="achievement-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Workshop Mentor</h3>
+                    <p>Conducted hands-on workshops on Python and Ethical Hacking basics, mentoring junior students.</p>
+                </div>
+                <div class="achievement-card hidden">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <h3>Community Lead</h3>
+                    <p>Led the college coding club, fostering a community of developers through regular meetups and hackathons.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEFINES: Contact section linked via ID 'contact' -->
+        <section id="contact" class="contact">
+            <h2 class="hidden">Contact Me</h2>
+            <div class="contact-wrapper">
+                <!-- Left Side: Contact Info -->
+                <div class="contact-info hidden">
+                    <h3>Let's Chat</h3>
+                    <p>Whether you have a question, want to start a project, or simply want to connect, I'm just a message away.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>arhant.dhanvijay@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nagpur, India</span>
+                    </div>
+                </div>
+
+                <!-- Right Side: Animated Form -->
+                <div class="contact-form-container hidden">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" required>
+                            <label>Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" required>
+                            <label>Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" required></textarea>
+                            <label>Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- DEFINES: Scroll to top button -->
+    <a href="#" class="scroll-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- DEFINES: Footer section -->
+    <footer>
+        <div class="footer-social">
+            <a id="profile-link" href="https://github.com/freeCodeCamp" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:arhant.dhanvijay@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 Arhant Dhanvijay</p>
+    </footer>
+
+    <!-- CONNECTS: External scripts and local script.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Error monitoring (Sentry) - replace DSN with your project's DSN to enable -->
+    <!-- Load Sentry (optional) -->
+    <script src="https://browser.sentry-cdn.com/7.49.0/bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+        // Initialize Sentry only if the library loaded. Replace the empty dsn with your DSN.
+        if (window.Sentry) {
+            Sentry.init({
+                dsn: '', // <-- PASTE YOUR SENTRY DSN HERE OR REMOVE THIS SCRIPT BLOCK
+                tracesSampleRate: 0.0 // set >0 to enable performance tracing
+            });
+        }
+    </script>
+</body>
+</html>
