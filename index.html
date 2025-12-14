@@ -105,10 +105,6 @@
                             <div class="code-line"><span class="prompt">➜</span> <span class="path">~</span> <span class="cursor">_</span></div>
                         </div>
                     </div>
-                    <!-- ADDED: GitHub Contribution Calendar -->
-                    <div class="github-calendar hidden">
-                        <img src="https://ghchart.rshah.org/007bff/YOUR_USERNAME" alt="GitHub Contribution Calendar" />
-                    </div>
                 </div>
             </div>
         </section>
@@ -161,40 +157,68 @@
         <!-- DEFINES: Certifications section linked via ID 'certifications' -->
         <section id="certifications" class="certifications">
             <h2 class="hidden">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="featured-cert-card card hidden">
-                    <div class="cert-status pending"><i class="fas fa-circle-notch fa-spin"></i> In Progress</div>
-                    <div class="cert-icon-large"><i class="fas fa-user-secret"></i></div>
-                    <h3>Certified Ethical Hacker (CEH)</h3>
-                    <p class="cert-issuer">EC-Council - Awaiting</p>
-                    <p class="cert-description">Demonstrates expertise in ethical hacking methodologies and tools.</p>
-                    <button class="btn cert-btn" disabled>Awaiting</button>
+            <p class="subtitle hidden">My official credentials and ongoing studies.</p>
+            <div class="cert-tabs">
+                <button class="cert-tab-btn active" data-filter="all">All</button>
+                <button class="cert-tab-btn" data-filter="verified">Verified</button>
+                <button class="cert-tab-btn" data-filter="in-progress">In Progress</button>
+            </div>
+            <div class="certifications-list">
+                <div class="cert-card hidden" data-category="in-progress">
+                    <div class="cert-timeline-body">
+                        <div class="cert-details">
+                            <h3 class="cert-title">Certified Ethical Hacker (CEH)</h3>
+                            <p class="cert-issuer">EC-Council</p>
+                            <p class="cert-description">Demonstrates expertise in ethical hacking methodologies and tools.</p>
+                        </div>
+                        <div class="cert-status">
+                            <span class="status-badge pending">In Progress</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="featured-cert-card card hidden">
-                    <div class="cert-status pending"><i class="fas fa-circle-notch fa-spin"></i> In Progress</div>
-                    <div class="cert-icon-large"><i class="fas fa-shield-alt"></i></div>
-                    <h3>CompTIA Security+</h3>
-                    <p class="cert-issuer">CompTIA - Awaiting</p>
-                    <p class="cert-description">Demonstrates foundational cybersecurity skills and network security knowledge.</p>
-                    <button class="btn cert-btn" disabled>Awaiting</button>
+                <div class="cert-card hidden" data-category="in-progress">
+                    <div class="cert-timeline-body">
+                        <div class="cert-details">
+                            <h3 class="cert-title">CompTIA Security+</h3>
+                            <p class="cert-issuer">CompTIA</p>
+                            <p class="cert-description">Demonstrates foundational cybersecurity skills and network security knowledge.</p>
+                        </div>
+                        <div class="cert-status">
+                            <span class="status-badge pending">In Progress</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="featured-cert-card card hidden">
-                    <div class="cert-status verified"><i class="fas fa-check-circle"></i> Valid</div>
-                    <div class="cert-icon-large"><i class="fas fa-code"></i></div>
-                    <h3>JavaScript Algorithms & Data Structures</h3>
-                    <div class="credential-id">ID: FCC-JS-2024-89X</div>
-                    <p class="cert-issuer">freeCodeCamp - 2024</p>
-                    <p class="cert-description">Certifies proficiency in JavaScript algorithms, data structures, and problem solving.</p>
-                    <a href="#" class="btn cert-btn" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+                <div class="cert-card hidden" data-category="verified">
+                    <div class="cert-timeline-body">
+                        <div class="cert-details">
+                            <h3 class="cert-title">JavaScript Algorithms & Data Structures</h3>
+                            <p class="cert-issuer">freeCodeCamp</p>
+                            <p class="cert-description">Certifies proficiency in JavaScript algorithms, data structures, and problem solving.</p>
+                            <a href="https://www.freecodecamp.org/certification/YOUR_ID" class="cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Credential <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="cert-status">
+                            <span class="status-badge verified">Verified</span>
+                            <p class="cert-date">Issued: Aug 2024</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="featured-cert-card card hidden">
-                    <div class="cert-status verified"><i class="fas fa-check-circle"></i> Valid</div>
-                    <div class="cert-icon-large"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Responsive Web Design</h3>
-                    <div class="credential-id">ID: FCC-RWD-2023-42Z</div>
-                    <p class="cert-issuer">freeCodeCamp - 2023</p>
-                    <p class="cert-description">Certifies ability to build responsive, accessible, and mobile-first web designs.</p>
-                    <a href="#" class="btn cert-btn" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+                <div class="cert-card hidden" data-category="verified">
+                    <div class="cert-timeline-body">
+                        <div class="cert-details">
+                            <h3 class="cert-title">Responsive Web Design</h3>
+                            <p class="cert-issuer">freeCodeCamp</p>
+                            <p class="cert-description">Certifies ability to build responsive, accessible, and mobile-first web designs.</p>
+                            <a href="https://www.freecodecamp.org/certification/YOUR_ID" class="cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Credential <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="cert-status">
+                            <span class="status-badge verified">Verified</span>
+                            <p class="cert-date">Issued: Dec 2023</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

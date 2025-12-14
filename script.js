@@ -631,3 +631,43 @@ if (chartCanvas) {
     
     chartObserver.observe(chartCanvas.parentElement);
 }
+
+/*==============================================
+=         Certification Filtering         =
+==============================================*/
+(function() {
+    const filterContainer = document.querySelector('.cert-tabs');
+    if (!filterContainer) return;
+
+    const filterButtons = filterContainer.querySelectorAll('.cert-tab-btn');
+    const certCards = document.querySelectorAll('.cert-card');
+
+    filterContainer.addEventListener('click', (e) => {
+        const targetButton = e.target.closest('.cert-tab-btn');
+        if (!targetButton) return;
+
+        // Update active button state
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        targetButton.classList.add('active');
+
+        const filter = targetButton.getAttribute('data-filter');
+
+        // Show/hide certification cards
+        certCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            const shouldShow = (filter === 'all' || filter === category);
+            
+            // Add a small delay for the animation to be noticeable
+            setTimeout(() => {
+                if (shouldShow) {
+                    card.classList.remove('hide');
+                    card.classList.add('show');
+                } else {
+                    card.classList.remove('show');
+                    card.classList.add('hide');
+                }
+            }, 100);
+        });
+    });
+})();
+
