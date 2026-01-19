@@ -1,4 +1,3 @@
-# 💫 About Me:
 Hi 👋 I'm Arhant Dhanvijay  <br><br>💻 Passionate about learning technology and cybersecurity  <br>🔐 Interested in ethical hacking & penetration testing  <br>📚 Always exploring new tools and concepts  <br>🌍 I love learning and want to travel and grow globally  <br>
 
 
