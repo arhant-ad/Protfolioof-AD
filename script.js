@@ -1,4 +1,4 @@
-// Animate on scroll
+ye // Animation on scroll
 // DEFINES: An IntersectionObserver to detect when elements enter the viewport
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
